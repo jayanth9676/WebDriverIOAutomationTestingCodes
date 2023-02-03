@@ -1,3 +1,3 @@
 #WDIO Automation Testing 
 
-![ScreenshotAullureReport](/Users/jayanth/Downloads/myPersonalVscodeProjects/WebDriverIOAutomationTestingCodes/WebDriverIOAutomationTestingCodes/ScreenshotAullureReport.png)
+![alt text](https://github.com/jayanth9676/WebDriverIOAutomationTestingCodes/blob/master/ScreenshotAullureReport.png)
