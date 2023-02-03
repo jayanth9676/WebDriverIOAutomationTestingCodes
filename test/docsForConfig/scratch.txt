@@ -1,0 +1,37 @@
+1) Runnig tests in parallel mode with utilization of capabilities mode
+change maxinstances in wdio.conf.js
+
+if you want headless mode the use the code in wdio docs and paste it in 
+capabilities of chrome(browser)
+
+
+
+2)  Runnig selected tests using Mocha Grep options in Framework
+write the keyword like 'Smoke' or 'Travel' in the "it blocks" to test only the 
+"it blocks" containing keyword 'Smoke'/'Travel'
+
+terminal command 
+npx wdio run ./wdio.conf.js --mochaOpts.grep Smoke
+
+
+3) bail and baseUrl options in wdio.conf.js
+
+4) Controlling the execution of Tests throught Command line parameters
+in wdio.conf.js add
+suites:{
+    debitCard : ['/Users/tnluser/projects_vscode/courseOnWdio/test/specs/eCommerceEndToEnd.js',
+     '/Users/tnluser/projects_vscode/courseOnWdio/test/specs/example.e2e.js']
+    creditCard : ['/Users/tnluser/projects_vscode/courseOnWdio/test/specs/pageObjectEcommerceE2E.js']
+}
+
+npx wdio run ./wdio.conf.js -- suite creditCard
+
+* Runnig individual test spec files
+npx wdio run ./wdio.conf.js --spec courseOnWdio/test/specs/eCommerceEndToEnd.js, courseOnWdio/test/specs/example.e2e.js
+
+* exclude parameter in wdio.conf.js
+
+5) Retry mechanism in falky tests
+
+6) Wrap the commands into scripts in package.json
+Generating scripts through Node.js from package.json file for consolidation
